@@ -1,0 +1,12 @@
+flask
+langchain
+boto3
+python-docx
+pandas
+python-pptx
+PyMuPDF
+numpy
+scipy
+sentence-transformers
+openpyxl
+

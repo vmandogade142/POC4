@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-image: url('https://images.unsplash.com/photo-1556761175-4c4728648a79?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.upload-section,
+.query-section,
+.response-section,
+.login-section,
+.delete-section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.upload-section:hover,
+.query-section:hover,
+.response-section:hover,
+.login-section:hover,
+.delete-section:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+textarea, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #006666;
+}
+
+#response-content {
+    min-height: 80px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+.logout-btn {
+    background-color: #d9534f;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+#app-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#app-section > button {
+    margin-top: auto;
+}
