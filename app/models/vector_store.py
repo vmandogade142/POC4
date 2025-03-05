@@ -12,6 +12,10 @@ class VectorStore:
 
     def add_documents(self, documents):
         self.vector_store.add_documents(documents)
-        
+
     def similarity_search(self, query, k=4):
         return self.vector_store.similarity_search(query, k=k)
+
+    def delete_documents(self, filename):
+        """Deletes documents associated with a filename from Chroma."""
+        self.vector_store.delete(where={"source": filename})
