@@ -79,11 +79,11 @@ def process_document(file):
 
         documents = []
 
-        if ext == "txt":
-            loader = TextLoader(temp_path)
-            documents = loader.load()
+        #if ext == "txt":
+            #loader = TextLoader(temp_path)
+            #documents = loader.load()
 
-        elif ext == "pdf":
+        if ext == "pdf":
             loader = PyPDFLoader(temp_path)
             documents = loader.load()
 
@@ -130,7 +130,7 @@ def upload_document():
             return jsonify({'error': 'No file provided'}), 400
 
         file = request.files['file']
-        if file.filename == '' or not file.filename.endswith(('.txt', '.pdf', '.docx', '.xlsx', '.pptx')):
+        if file.filename == '' or not file.filename.endswith(('.pdf', '.docx', '.xlsx', '.pptx')):
             return jsonify({'error': 'Invalid file type'}), 400
 
         text_chunks = process_document(file)  # Extract and split text
